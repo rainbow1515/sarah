@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Quicksand", "Fredoka", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom styles for children apps */
+.bubble-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 24px;
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #fef08a transparent; /* Matches bg-yellow-100 */
+}
+
+/* Print specific styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.5rem !important;
+  }
+}
+

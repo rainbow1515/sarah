@@ -1,0 +1,6 @@
+{
+  "name": "小学三年级数学混合运算练习",
+  "description": "专为三年级小朋友设计的加减乘除混合运算练习系统，包含智能出题、自动批改、步骤详解与错题统计功能，风格卡通童趣。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
